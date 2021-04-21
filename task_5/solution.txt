@@ -1,0 +1,8 @@
+George will go to the party
+
+Given the prior knowledge P(George will go to the party) = 1/4 and P(George will not go to the party) = 3/4 
+According to the Bayes theorem: P(George will go to the party | Yes,Yes,Yes) = Prior(George will go to the party) * P(Yes,Yes,Yes | George will go to the party) / P(Yes, Yes, Yes)
+
+P(Yes,Yes,Yes) = P(George will go to the party) * P(Yes,Yes,Yes | George will go to the party) + P(George will not go to the party) * P(Yes,Yes,Yes | George will not go to the party) = 0.25 * (4/7)^3 + 0.75 * (3/7)^3 = 0.25*(64/343) + 0.75*(27/343)
+
+P(George will go to the party | Yes,Yes,Yes) = 0.25 * (64/343) / ( 0.25 * 64/343 + 0.75 * 27/343 )= 64 / (64 + 81) = 64/145
